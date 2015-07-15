@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F980AA991A946A070010C919 /* InteractionMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F980AA981A946A070010C919 /* InteractionMessage.m */; };
+		F98FC92A1A92A9A3008BA23D /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = F98FC9281A92A9A3008BA23D /* spark.png */; };
+		F98FC92C1A92D23A008BA23D /* images.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F98FC92B1A92D23A008BA23D /* images.atlas */; };
+		F98FC92E1A92D4EE008BA23D /* fire_0.sks in Resources */ = {isa = PBXBuildFile; fileRef = F98FC92D1A92D4EE008BA23D /* fire_0.sks */; };
+		F98FC9401A930DA4008BA23D /* ItemBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F98FC93F1A930DA4008BA23D /* ItemBar.m */; };
+		F9A1B03A1A93D76B00E41AFF /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A1B0391A93D76B00E41AFF /* Item.m */; };
+		F9A1B03E1A93D98400E41AFF /* Spell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A1B03D1A93D98400E41AFF /* Spell.m */; };
+		F9A1B0411A93EA7C00E41AFF /* ItemSlot.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A1B0401A93EA7C00E41AFF /* ItemSlot.m */; };
+		F9A1B0441A94014700E41AFF /* Projectile.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A1B0431A94014700E41AFF /* Projectile.m */; };
+		F9A1B0481A941F5A00E41AFF /* spell_fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = F9A1B0461A941F5A00E41AFF /* spell_fire.sks */; };
+		F9A1B0491A941F5A00E41AFF /* spell_freeze.sks in Resources */ = {isa = PBXBuildFile; fileRef = F9A1B0471A941F5A00E41AFF /* spell_freeze.sks */; };
+		F9AB38CA1A900E5A00632D9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AB38C91A900E5A00632D9F /* main.m */; };
+		F9AB38CD1A900E5A00632D9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AB38CC1A900E5A00632D9F /* AppDelegate.m */; };
+		F9AB38D51A900E5A00632D9F /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AB38D41A900E5A00632D9F /* GameViewController.m */; };
+		F9AB38DA1A900E5A00632D9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9AB38D91A900E5A00632D9F /* Images.xcassets */; };
+		F9AB38E91A900E5A00632D9F /* DungeonMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AB38E81A900E5A00632D9F /* DungeonMasterTests.m */; };
+		F9AB38F41A900EB300632D9F /* DPad.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AB38F31A900EB300632D9F /* DPad.m */; };
+		F9AB38F71A900EBD00632D9F /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AB38F61A900EBD00632D9F /* Scene.m */; };
+		F9AB38FA1A900EC200632D9F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AB38F91A900EC200632D9F /* Player.m */; };
+		F9AB39041A9013FD00632D9F /* Dungeon.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AB39031A9013FD00632D9F /* Dungeon.m */; };
+		F9AB39071A90149100632D9F /* DungeonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AB39061A90149100632D9F /* DungeonCell.m */; };
+		F9AB390C1A91AEA900632D9F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AB390B1A91AEA900632D9F /* Person.m */; };
+		F9AB390F1A91B0F700632D9F /* Enemy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AB390E1A91B0F700632D9F /* Enemy.m */; };
+		F9F7C4561A957D6400AC470B /* map_tdm_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = F9F7C4551A957D6400AC470B /* map_tdm_1.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9AB38E31A900E5A00632D9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9AB38BC1A900E5A00632D9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9AB38C31A900E5A00632D9F;
+			remoteInfo = DungeonMaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F980AA971A946A070010C919 /* InteractionMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractionMessage.h; sourceTree = "<group>"; };
+		F980AA981A946A070010C919 /* InteractionMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractionMessage.m; sourceTree = "<group>"; };
+		F98FC9281A92A9A3008BA23D /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = DungeonMaster/Assets/particles/spark.png; sourceTree = "<group>"; };
+		F98FC92B1A92D23A008BA23D /* images.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = images.atlas; path = DungeonMaster/Assets/images.atlas; sourceTree = "<group>"; };
+		F98FC92D1A92D4EE008BA23D /* fire_0.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = fire_0.sks; path = DungeonMaster/Assets/particles/fire_0.sks; sourceTree = "<group>"; };
+		F98FC93E1A930DA4008BA23D /* ItemBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemBar.h; sourceTree = "<group>"; };
+		F98FC93F1A930DA4008BA23D /* ItemBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemBar.m; sourceTree = "<group>"; };
+		F9A1B0381A93D76B00E41AFF /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		F9A1B0391A93D76B00E41AFF /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		F9A1B03C1A93D98400E41AFF /* Spell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spell.h; sourceTree = "<group>"; };
+		F9A1B03D1A93D98400E41AFF /* Spell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spell.m; sourceTree = "<group>"; };
+		F9A1B03F1A93EA7C00E41AFF /* ItemSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemSlot.h; sourceTree = "<group>"; };
+		F9A1B0401A93EA7C00E41AFF /* ItemSlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemSlot.m; sourceTree = "<group>"; };
+		F9A1B0421A94014700E41AFF /* Projectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Projectile.h; sourceTree = "<group>"; };
+		F9A1B0431A94014700E41AFF /* Projectile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Projectile.m; sourceTree = "<group>"; };
+		F9A1B0461A941F5A00E41AFF /* spell_fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = spell_fire.sks; path = DungeonMaster/Assets/particles/spell_fire.sks; sourceTree = "<group>"; };
+		F9A1B0471A941F5A00E41AFF /* spell_freeze.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = spell_freeze.sks; path = DungeonMaster/Assets/particles/spell_freeze.sks; sourceTree = "<group>"; };
+		F9AB38C41A900E5A00632D9F /* DungeonMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DungeonMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9AB38C81A900E5A00632D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9AB38C91A900E5A00632D9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F9AB38CB1A900E5A00632D9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F9AB38CC1A900E5A00632D9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F9AB38D31A900E5A00632D9F /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		F9AB38D41A900E5A00632D9F /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		F9AB38D71A900E5A00632D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9AB38D91A900E5A00632D9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F9AB38DC1A900E5A00632D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F9AB38E21A900E5A00632D9F /* DungeonMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DungeonMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9AB38E71A900E5A00632D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9AB38E81A900E5A00632D9F /* DungeonMasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DungeonMasterTests.m; sourceTree = "<group>"; };
+		F9AB38F21A900EB300632D9F /* DPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPad.h; sourceTree = "<group>"; };
+		F9AB38F31A900EB300632D9F /* DPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPad.m; sourceTree = "<group>"; };
+		F9AB38F51A900EBD00632D9F /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		F9AB38F61A900EBD00632D9F /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
+		F9AB38F81A900EC200632D9F /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		F9AB38F91A900EC200632D9F /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		F9AB39021A9013FD00632D9F /* Dungeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dungeon.h; sourceTree = "<group>"; };
+		F9AB39031A9013FD00632D9F /* Dungeon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dungeon.m; sourceTree = "<group>"; };
+		F9AB39051A90149100632D9F /* DungeonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DungeonCell.h; sourceTree = "<group>"; };
+		F9AB39061A90149100632D9F /* DungeonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DungeonCell.m; sourceTree = "<group>"; };
+		F9AB390A1A91AEA900632D9F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F9AB390B1A91AEA900632D9F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F9AB390D1A91B0F700632D9F /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
+		F9AB390E1A91B0F700632D9F /* Enemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Enemy.m; sourceTree = "<group>"; };
+		F9F7C4551A957D6400AC470B /* map_tdm_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = map_tdm_1.txt; path = DungeonMaster/Assets/maps/map_tdm_1.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9AB38C11A900E5A00632D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AB38DF1A900E5A00632D9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F98FC9381A930AF9008BA23D /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				F9AB38F21A900EB300632D9F /* DPad.h */,
+				F9AB38F31A900EB300632D9F /* DPad.m */,
+				F98FC93E1A930DA4008BA23D /* ItemBar.h */,
+				F98FC93F1A930DA4008BA23D /* ItemBar.m */,
+				F9A1B03F1A93EA7C00E41AFF /* ItemSlot.h */,
+				F9A1B0401A93EA7C00E41AFF /* ItemSlot.m */,
+				F980AA971A946A070010C919 /* InteractionMessage.h */,
+				F980AA981A946A070010C919 /* InteractionMessage.m */,
+			);
+			name = HUD;
+			sourceTree = "<group>";
+		};
+		F98FC9391A930B11008BA23D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F98FC92B1A92D23A008BA23D /* images.atlas */,
+				F9F7C4581A957D7700AC470B /* Particles */,
+				F9F7C4571A957D6A00AC470B /* Maps */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		F98FC93A1A930B28008BA23D /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				F9AB390A1A91AEA900632D9F /* Person.h */,
+				F9AB390B1A91AEA900632D9F /* Person.m */,
+				F9AB38F81A900EC200632D9F /* Player.h */,
+				F9AB38F91A900EC200632D9F /* Player.m */,
+				F9AB390D1A91B0F700632D9F /* Enemy.h */,
+				F9AB390E1A91B0F700632D9F /* Enemy.m */,
+			);
+			name = Person;
+			sourceTree = "<group>";
+		};
+		F98FC93B1A930B43008BA23D /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F9AB38CB1A900E5A00632D9F /* AppDelegate.h */,
+				F9AB38CC1A900E5A00632D9F /* AppDelegate.m */,
+				F9AB38D31A900E5A00632D9F /* GameViewController.h */,
+				F9AB38D41A900E5A00632D9F /* GameViewController.m */,
+				F9AB38D61A900E5A00632D9F /* Main.storyboard */,
+				F9AB38DB1A900E5A00632D9F /* LaunchScreen.xib */,
+				F9AB38D91A900E5A00632D9F /* Images.xcassets */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		F98FC93C1A930B6C008BA23D /* Dungeon */ = {
+			isa = PBXGroup;
+			children = (
+				F9AB39021A9013FD00632D9F /* Dungeon.h */,
+				F9AB39031A9013FD00632D9F /* Dungeon.m */,
+				F9AB39051A90149100632D9F /* DungeonCell.h */,
+				F9AB39061A90149100632D9F /* DungeonCell.m */,
+			);
+			name = Dungeon;
+			sourceTree = "<group>";
+		};
+		F98FC93D1A930B7E008BA23D /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				F9AB38F51A900EBD00632D9F /* Scene.h */,
+				F9AB38F61A900EBD00632D9F /* Scene.m */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		F9A1B03B1A93D77000E41AFF /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				F9A1B0381A93D76B00E41AFF /* Item.h */,
+				F9A1B0391A93D76B00E41AFF /* Item.m */,
+				F9A1B03C1A93D98400E41AFF /* Spell.h */,
+				F9A1B03D1A93D98400E41AFF /* Spell.m */,
+			);
+			name = Item;
+			sourceTree = "<group>";
+		};
+		F9A1B0451A94014E00E41AFF /* Projectile */ = {
+			isa = PBXGroup;
+			children = (
+				F9A1B0421A94014700E41AFF /* Projectile.h */,
+				F9A1B0431A94014700E41AFF /* Projectile.m */,
+			);
+			name = Projectile;
+			sourceTree = "<group>";
+		};
+		F9AB38BB1A900E5A00632D9F = {
+			isa = PBXGroup;
+			children = (
+				F98FC9391A930B11008BA23D /* Assets */,
+				F9AB38C61A900E5A00632D9F /* DungeonMaster */,
+				F9AB38E51A900E5A00632D9F /* DungeonMasterTests */,
+				F9AB38C51A900E5A00632D9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9AB38C51A900E5A00632D9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9AB38C41A900E5A00632D9F /* DungeonMaster.app */,
+				F9AB38E21A900E5A00632D9F /* DungeonMasterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9AB38C61A900E5A00632D9F /* DungeonMaster */ = {
+			isa = PBXGroup;
+			children = (
+				F98FC9381A930AF9008BA23D /* HUD */,
+				F9A1B0451A94014E00E41AFF /* Projectile */,
+				F9A1B03B1A93D77000E41AFF /* Item */,
+				F98FC93A1A930B28008BA23D /* Person */,
+				F98FC93C1A930B6C008BA23D /* Dungeon */,
+				F98FC93D1A930B7E008BA23D /* Scene */,
+				F98FC93B1A930B43008BA23D /* Interface */,
+				F9AB38C71A900E5A00632D9F /* Supporting Files */,
+			);
+			path = DungeonMaster;
+			sourceTree = "<group>";
+		};
+		F9AB38C71A900E5A00632D9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9AB38C81A900E5A00632D9F /* Info.plist */,
+				F9AB38C91A900E5A00632D9F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9AB38E51A900E5A00632D9F /* DungeonMasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9AB38E81A900E5A00632D9F /* DungeonMasterTests.m */,
+				F9AB38E61A900E5A00632D9F /* Supporting Files */,
+			);
+			path = DungeonMasterTests;
+			sourceTree = "<group>";
+		};
+		F9AB38E61A900E5A00632D9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9AB38E71A900E5A00632D9F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9F7C4571A957D6A00AC470B /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				F9F7C4551A957D6400AC470B /* map_tdm_1.txt */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		F9F7C4581A957D7700AC470B /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				F9A1B0471A941F5A00E41AFF /* spell_freeze.sks */,
+				F9A1B0461A941F5A00E41AFF /* spell_fire.sks */,
+				F98FC92D1A92D4EE008BA23D /* fire_0.sks */,
+				F98FC9281A92A9A3008BA23D /* spark.png */,
+			);
+			name = Particles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9AB38C31A900E5A00632D9F /* DungeonMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9AB38EC1A900E5A00632D9F /* Build configuration list for PBXNativeTarget "DungeonMaster" */;
+			buildPhases = (
+				F9AB38C01A900E5A00632D9F /* Sources */,
+				F9AB38C11A900E5A00632D9F /* Frameworks */,
+				F9AB38C21A900E5A00632D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DungeonMaster;
+			productName = DungeonMaster;
+			productReference = F9AB38C41A900E5A00632D9F /* DungeonMaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9AB38E11A900E5A00632D9F /* DungeonMasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9AB38EF1A900E5A00632D9F /* Build configuration list for PBXNativeTarget "DungeonMasterTests" */;
+			buildPhases = (
+				F9AB38DE1A900E5A00632D9F /* Sources */,
+				F9AB38DF1A900E5A00632D9F /* Frameworks */,
+				F9AB38E01A900E5A00632D9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9AB38E41A900E5A00632D9F /* PBXTargetDependency */,
+			);
+			name = DungeonMasterTests;
+			productName = DungeonMasterTests;
+			productReference = F9AB38E21A900E5A00632D9F /* DungeonMasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9AB38BC1A900E5A00632D9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = CD;
+				TargetAttributes = {
+					F9AB38C31A900E5A00632D9F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					F9AB38E11A900E5A00632D9F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = F9AB38C31A900E5A00632D9F;
+					};
+				};
+			};
+			buildConfigurationList = F9AB38BF1A900E5A00632D9F /* Build configuration list for PBXProject "DungeonMaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9AB38BB1A900E5A00632D9F;
+			productRefGroup = F9AB38C51A900E5A00632D9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9AB38C31A900E5A00632D9F /* DungeonMaster */,
+				F9AB38E11A900E5A00632D9F /* DungeonMasterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9AB38C21A900E5A00632D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F7C4561A957D6400AC470B /* map_tdm_1.txt in Resources */,
+				F98FC92A1A92A9A3008BA23D /* spark.png in Resources */,
+				F98FC92C1A92D23A008BA23D /* images.atlas in Resources */,
+				F9A1B0481A941F5A00E41AFF /* spell_fire.sks in Resources */,
+				F98FC92E1A92D4EE008BA23D /* fire_0.sks in Resources */,
+				F9A1B0491A941F5A00E41AFF /* spell_freeze.sks in Resources */,
+				F9AB38DA1A900E5A00632D9F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AB38E01A900E5A00632D9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9AB38C01A900E5A00632D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A1B03A1A93D76B00E41AFF /* Item.m in Sources */,
+				F98FC9401A930DA4008BA23D /* ItemBar.m in Sources */,
+				F9AB39071A90149100632D9F /* DungeonCell.m in Sources */,
+				F9AB38F71A900EBD00632D9F /* Scene.m in Sources */,
+				F980AA991A946A070010C919 /* InteractionMessage.m in Sources */,
+				F9AB38F41A900EB300632D9F /* DPad.m in Sources */,
+				F9A1B03E1A93D98400E41AFF /* Spell.m in Sources */,
+				F9AB38D51A900E5A00632D9F /* GameViewController.m in Sources */,
+				F9AB38CD1A900E5A00632D9F /* AppDelegate.m in Sources */,
+				F9AB38FA1A900EC200632D9F /* Player.m in Sources */,
+				F9AB390F1A91B0F700632D9F /* Enemy.m in Sources */,
+				F9A1B0411A93EA7C00E41AFF /* ItemSlot.m in Sources */,
+				F9AB390C1A91AEA900632D9F /* Person.m in Sources */,
+				F9AB39041A9013FD00632D9F /* Dungeon.m in Sources */,
+				F9AB38CA1A900E5A00632D9F /* main.m in Sources */,
+				F9A1B0441A94014700E41AFF /* Projectile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AB38DE1A900E5A00632D9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9AB38E91A900E5A00632D9F /* DungeonMasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9AB38E41A900E5A00632D9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9AB38C31A900E5A00632D9F /* DungeonMaster */;
+			targetProxy = F9AB38E31A900E5A00632D9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9AB38D61A900E5A00632D9F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9AB38D71A900E5A00632D9F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9AB38DB1A900E5A00632D9F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9AB38DC1A900E5A00632D9F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9AB38EA1A900E5A00632D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F9AB38EB1A900E5A00632D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9AB38ED1A900E5A00632D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DungeonMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F9AB38EE1A900E5A00632D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DungeonMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F9AB38F01A900E5A00632D9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DungeonMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DungeonMaster.app/DungeonMaster";
+			};
+			name = Debug;
+		};
+		F9AB38F11A900E5A00632D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DungeonMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DungeonMaster.app/DungeonMaster";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9AB38BF1A900E5A00632D9F /* Build configuration list for PBXProject "DungeonMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9AB38EA1A900E5A00632D9F /* Debug */,
+				F9AB38EB1A900E5A00632D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9AB38EC1A900E5A00632D9F /* Build configuration list for PBXNativeTarget "DungeonMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9AB38ED1A900E5A00632D9F /* Debug */,
+				F9AB38EE1A900E5A00632D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9AB38EF1A900E5A00632D9F /* Build configuration list for PBXNativeTarget "DungeonMasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9AB38F01A900E5A00632D9F /* Debug */,
+				F9AB38F11A900E5A00632D9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9AB38BC1A900E5A00632D9F /* Project object */;
+}
