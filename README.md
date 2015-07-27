@@ -8,7 +8,7 @@ Working on:
   -Multiplayer via bluetooth
 
 ###Procedural generation
-<img src="./Screenshots/World1.png" alt="Drawing" width="200 px"/>
+<img src="./Screenshots/world1.png" alt="Drawing" width="200 px"/>
 
 ###Pathfinding
 <img src="./Screenshots/Enemies1.png" alt="Drawing" width="200 px"/>
