@@ -14,13 +14,13 @@ the [A\* pathfinding algorithim](https://en.wikipedia.org/wiki/A*_search_algorit
 When the app is first loaded, a blank canvas is initiated and populated randomly with walls. The dungeon is then cleaned up by counting each cells neighbor walls to generate caves. Caves are then identified and disconnected caverns are removed. Disconnected walls are also removed. After this, dungeons of varying sizes are created and populated with random treasure chests. Floor patterns and wall patters are randomized and fires are added to dungeons.
 
 ## Work in progress
-* Multiplayer via bluetooth
+* Multiplayer matchfinding and gameplay via bluetooth
 
 ## Installation
 No extra installation efforts are required. The following is used in this app:
 * [SpriteKit](https://developer.apple.com/spritekit/) - game driver
 
-##Images
+## Images
 #### Procedural generation
 <img src="./Screenshots/world1.png" alt="Drawing" width="200 px"/>
 
